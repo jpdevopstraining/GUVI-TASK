@@ -5,15 +5,15 @@ DOCKER_USERNAME="jayaprakashspt"
 # Set your Docker Hub password
 DOCKER_PASSWORD="dckr_pat_Q250SXEkkRsQGSm0sYiInF3yiOQ"
 # Set the name for your Docker image
-IMAGE_NAME="bannu"
+IMAGE_NAME="prod"
 # Set the tag for your Docker image
 TAG="v2"
 
 # Build the Docker image
-docker build -t jayaprakashspt/bannu:v2 .
+docker build -t jayaprakashspt/prod:v2 .
 
 # Log in to Docker Hub
 echo "dckr_pat_Q250SXEkkRsQGSm0sYiInF3yiOQ" | docker login -u "jayaprakashspt" Jpmanjula@2023
 
 # Push the Docker image to Docker Hub
-docker push jayaprakashspt/bannu:v2
+docker push jayaprakashspt/prod:v2
